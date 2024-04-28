@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Figtree";
+  font-family: 'Figtree';
 }
 
 p {
@@ -15,7 +15,6 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-
 }
 
 main {
@@ -25,11 +24,16 @@ main {
   background-color: white;
   border-radius: 20px;
   border: 1px solid hsl(0, 0%, 7%);
-  box-shadow: 16px 16px;
+  box-shadow: 8px 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: url('./assets/images/handcursor.svg'), auto;
+  transition: box-shadow 0.3s;
+}
+
+main:hover {
+  box-shadow: 15px 16px 0px 1px #000;
 }
 
 .main-image_container {
@@ -37,19 +41,17 @@ main {
   overflow: hidden;
 }
 
-.main-image_container>img {
+.main-image_container > img {
   width: 279px;
   /* height: 200px; */
   border-radius: 10px;
 }
 
-
-
-.main-content_container>*:not(:first-child) {
+.main-content_container > *:not(:first-child) {
   margin-top: 12px;
 }
 
-.main-content_container>#category {
+.main-content_container > #category {
   font-size: 14px;
   font-weight: 800;
   padding: 4px 12px;
@@ -57,17 +59,21 @@ main {
   border-radius: 4px;
 }
 
-.main-content_container>p:first-child {
+.main-content_container > p:first-child {
   font-weight: 500;
 }
 
-.main-content_container>h1 {
+.main-content_container > h1 {
   font-size: 24px;
   font-weight: 800;
+  color: black;
+}
+
+.main-content_container > h1:hover {
   color: hsl(47, 88%, 63%);
 }
 
-.main-content_container>p:last-child {
+.main-content_container > p:last-child {
   font-weight: 500;
   color: hsl(0, 0%, 50%);
   font-size: 16px;
@@ -79,16 +85,16 @@ main {
   align-items: center;
 }
 
-.main-author_container>*:not(:first-child) {
+.main-author_container > *:not(:first-child) {
   margin-left: 12px;
 }
 
-.main-author_container>img {
+.main-author_container > img {
   width: 32px;
   height: 32px;
 }
 
-.main-author_container>p {
+.main-author_container > p {
   font-weight: 800;
   font-size: 14px;
 }
@@ -99,7 +105,7 @@ main {
     height: 522px;
   }
 
-  .main-image_container>img {
+  .main-image_container > img {
     width: 336px;
     height: 200px;
     border-radius: 10px;
